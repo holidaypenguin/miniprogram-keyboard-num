@@ -1,3 +1,160 @@
-.index {
-  color: green;
+
+image{
+  width: 100%;
+  height: 100%;
+}
+/* 整体 */
+.keyboard-view{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* 头部 */
+.keyboard-title{
+  flex: 1 100rpx;
+}
+.keyboard-title-inner{
+  margin: 55rpx 0 0 40rpx;
+}
+/* 输入框 */
+.keyboard-input{
+  flex: 1 154rpx;
+}
+.keyboard-input-inner{
+  margin: 40rpx 40rpx 30rpx 40rpx;
+  position: relative;
+}
+.keyboard-input-el-container{
+  height: 84rpx;
+}
+.keyboard-input-el{
+  position:absolute;
+  right:126rpx;
+  top:0;
+  left:0; 
+  bottom:0;
+  line-height: 84rpx;
+  font-size: 60rpx;
+  color:#2e2e35;
+  text-align: right;
+  word-break: break-all;
+  /* white-space: nowrap; */
+  font-family: april;
+}
+.keyboard-input-split{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2rpx;
+  right: 112rpx;
+  background-color: #787a8a;
+}
+.keyboard-input-close{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 40rpx;
+  position: absolute;
+  top: 22rpx;
+  right: 6rpx;
+}
+
+.keyboard-input-close-el{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: scale(2);
+}
+/* 提示框 */
+.keyboard-tips{
+  flex: 1 152rpx;
+}
+.keyboard-tips-inner{
+  margin-left: 75rpx;
+  margin-right: 75rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  color: #848391;
+  background:#e9ebf1;
+  border-radius: 64rpx;
+}
+/* 键盘主体 */
+.keyboard-main{
+  flex: 1 800rpx;
+  display: flex;
+  flex-direction: column;
+}
+.keyboard-main-line{
+  flex: 1 160rpx;
+  display: flex;
+}
+.keyboard-main-item{
+  flex: 1 250rpx;
+  background:#2e2e35;
+  position: relative;
+}
+.keyboard-main-button{
+  /* width: 100%;  */
+  /* height: 100%;  */
+  border: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  /* display: table; */
+  border-radius: 0rpx;
+  background: #2e2e35;
+  color: #ffffff;
+  font-size: 60rpx;
+  position: absolute; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.keyboard-main-item_1{
+  /* background: #253139; */
+}
+.keyboard-main-button text{
+  /* display: table-cell; */
+  /* vertical-align: middle; */
+  /* height: 100%;  */
+  /* height: 0; */
+  display: block;
+  /* margin-top: 20%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.keyboard-main-button::after{
+  border: 0rpx;
+  border-radius: 0rpx;
+}
+.keyboard-main-buttom_remove-image{
+  /* display: table-cell; */
+  /* vertical-align: middle; */
+  width: 19.2%;
+  margin: 0 auto;
+}
+.keyboard-main-button_confirm{
+  background-color: #FFAD2F;
+}
+.keyboard-main-button_hover{
+  background-color: #57575D;
+}
+.keyboard-main-button_confirm-hover{
+  background-color: #FDBE5E;
+}
+
+.verify-input-text{
+  display: block;
+  float: right;
+  width: 32rpx;
+  line-height: 84rpx;
+}
+.verify-input-close{
+  right: 52rpx;
 }

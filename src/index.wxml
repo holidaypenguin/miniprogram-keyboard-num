@@ -1,1 +1,134 @@
-<view class="index">{{prop}}</view>
+<!-- 自定义键盘 -->
+<view class='keyboard-view'>
+  <!-- 标题 -->
+  <view class='keyboard-title'>
+    <view class="keyboard-title-inner">{{title}}</view>
+  </view>
+  <!-- 输入 -->
+  <view class='keyboard-input'>
+    <view class='keyboard-input-inner'>
+      <view class='keyboard-input-el-container'>
+        <view class="keyboard-input-el hand-input-el">{{currentShow}}</view>
+        <view class="keyboard-input-split hand-input-split"></view>
+        <text class='verify-input-text' wx:if="{{type === 'money'}}">元</text>
+      </view>
+      <view class='keyboard-input-close verify-input-close'>
+        <image src='./images/delete.png'></image> 
+        <view class='keyboard-input-close-el' bindtap="clear"></view>
+      </view>
+    </view>
+  </view>
+  <!-- 提示 -->
+  <view class='keyboard-tips'>
+    <view class='keyboard-tips-inner' wx:if="{{tips !== ''}}">{{tips}}</view>
+  </view>
+  <!-- 键盘主体 -->
+  <view class='keyboard-main'>
+    <view class='keyboard-main-line'>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='1'
+          ><text>1</text></button>
+      </view>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='2'
+          ><text>2</text></button>
+      </view>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='3'
+          ><text>3</text></button>
+      </view>
+    </view>
+    <view class='keyboard-main-line'>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='4'
+          ><text>4</text></button>
+      </view>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='5'
+          ><text>5</text></button>
+      </view>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='6'
+          ><text>6</text></button>
+      </view>
+    </view>
+    <view class='keyboard-main-line'>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='7'
+          ><text>7</text></button>
+      </view>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='8'
+          ><text>8</text></button>
+      </view>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='9'
+          ><text>9</text></button>
+      </view>
+    </view>
+    <view class='keyboard-main-line'>
+      <view class='keyboard-main-item keyboard-main-item_1'
+        wx:if="{{type !== 'money'}}">
+        
+      </view>
+      <view class='keyboard-main-item'
+        wx:if="{{type === 'money'}}">
+        <button class="keyboard-main-button keyboard-main-item_1" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='11'
+          ><text>.</text></button>
+      </view>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='0'
+          ><text>0</text></button>
+      </view>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button keyboard-main-buttom_remove keyboard-main-item_1" 
+          hover-class="keyboard-main-button_hover"
+          bindtap='numClick'
+          data-type='12'
+          ><image class="keyboard-main-buttom_remove-image" src="./images/remove.svg"></image></button>
+      </view>
+    </view>
+    <view class='keyboard-main-line'>
+      <view class='keyboard-main-item'>
+        <button class="keyboard-main-button keyboard-main-button_confirm" 
+          hover-class="keyboard-main-button_confirm-hover"
+          bindtap='validate'
+          ><text>{{submit}}</text></button>
+      </view>
+      
+    </view>
+  </view>
+</view>

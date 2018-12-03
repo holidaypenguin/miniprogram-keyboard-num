@@ -13,8 +13,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.2.3",
-	"appid": "",
-	"projectname": "miniprogram-demo",
+	"appid": "wxac75bf66ed9c6321",
+	"projectname": "miniprogram-keyboard-num",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
