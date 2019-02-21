@@ -29,9 +29,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/holidaypenguin/miniprogram-keyboard-num.git"
   },
-  "author": "",
+  "bugs": {
+    "url": "https://github.com/holidaypenguin/miniprogram-keyboard-num/issues"
+  },
+  "author": "holidaypenguin <songship1221@sina.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",

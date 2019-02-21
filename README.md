@@ -5,7 +5,7 @@
 > 使用此组件需要依赖小程序基础库 2.2.3 以上版本，同时依赖开发者工具的 npm 构建。具体详情可查阅[官方 npm 文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html)。
 
 ## 使用效果
-![keyboard-num](./docs/images/GIF.gif)
+![keyboard-num](https://holidaypenguin.github.io/miniprogram-keyboard-num/images/GIF.gif)
 
 ## 使用方法
 
@@ -44,3 +44,31 @@ npm install --save miniprogram-keyboard-num
 | submit      |   String   | 确定 |   -    | 确认按钮提示文字  |
 
 
+## keyboard-num的事件介绍如下：
+
+### change事件
+``` json
+{
+  detail: {
+    value: {
+      current: '', // 当前未格式化输入值
+      currentNum: '', // 金额转化为分，默认模式的时候为0
+    }
+  }
+}
+
+```
+
+### confirm事件
+
+``` json
+{
+  detail: {
+    value: {
+      current: '', // 当前未格式化输入值
+      currentNum: '', // 金额转化为分，默认模式的时候为0
+    }
+  }
+}
+
+```
