@@ -1,1 +1,6 @@
-<keyboard></keyboard>
+
+<button bindtap="toPage" data-index='1'>数字输入-浅色</button>
+<button bindtap="toPage" data-index='2'>金额输入-浅色</button>
+<button bindtap="toPage" data-index='3'>数字输入-深色</button>
+<button bindtap="toPage" data-index='4'>金额输入-深色</button>
+

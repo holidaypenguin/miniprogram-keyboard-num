@@ -2,5 +2,6 @@
   "usingComponents": {
     "keyboard": "../../components/index",
     "keyboard-light": "../../components/light"
-  }
+  },
+  "navigationBarTitleText": "数字输入-浅色"
 }

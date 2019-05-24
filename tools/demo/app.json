@@ -1,6 +1,10 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/other/lightMoney",
+    "pages/other/lightNum",
+    "pages/other/darkMoney",
+    "pages/other/darkNum"
   ],
   "window":{
     "backgroundTextStyle":"light",
