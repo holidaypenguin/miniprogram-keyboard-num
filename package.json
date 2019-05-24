@@ -1,6 +1,6 @@
 {
   "name": "miniprogram-keyboard-num",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "小程序自定义组件(导航栏视图)",
   "main": "miniprogram_dist/index.js",
   "scripts": {

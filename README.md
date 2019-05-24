@@ -20,15 +20,22 @@ npm install --save miniprogram-keyboard-num
 ```json
 {
   "usingComponents": {
-    "keyboard-num": "miniprogram-keyboard-num"
+    "keyboard-num": "miniprogram-keyboard-num",
+    "keyboard-num-light": "miniprogram-keyboard-num/light"
   }
 }
 ```
-3. WXML 文件中引用 keyboard-num
+
+3. 点击 工具 -> 构建npm
+
+4. WXML 文件中引用 keyboard-num
 
 ``` xml
-<keyboard-num></navigation-bar> 
+<keyboard-num></keyboard-num>
+<keyboard-num-light></keyboard-num-light>
 ```
+
+> 引用后自动从铺设在给定高度的地方，建议是100%的高度。
 
 ## keyboard-num的属性介绍如下：
 
